@@ -1,0 +1,34 @@
+{
+  "default_executable": {
+    "path": "c:\\Python27\\python.exe", 
+    "version": "2.7.3", 
+    "type": "sumatra.programs.PythonExecutable", 
+    "options": "", 
+    "name": "Python"
+  }, 
+  "default_repository": {
+    "url": "d:\\workspace\\smt_test", 
+    "type": "sumatra.versioncontrol._git.GitRepository"
+  }, 
+  "name": "smt_test", 
+  "input_datastore": {
+    "root": "/", 
+    "type": "sumatra.datastore.filesystem.FileSystemDataStore"
+  }, 
+  "default_launch_mode": {
+    "type": "sumatra.launch.SerialLaunchMode"
+  }, 
+  "record_store": {
+    "db_file": "d:\\workspace\\smt_test\\.smt\\records", 
+    "type": "sumatra.recordstore.django_store.DjangoRecordStore"
+  }, 
+  "data_store": {
+    "root": "./Data", 
+    "type": "sumatra.datastore.filesystem.FileSystemDataStore"
+  }, 
+  "on_changed": "error", 
+  "data_label": null, 
+  "default_main_file": "main.py", 
+  "_most_recent": "100k", 
+  "description": ""
+}
