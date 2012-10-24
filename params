@@ -1,0 +1,3 @@
+[default]
+popsize = 1000
+ticks = 100
