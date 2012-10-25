@@ -23,13 +23,16 @@ The simulation is implemented in Python 2.7 and required NumPy to be installed.
 
 ## Setup Sumatra
 
-I did this on Windows, it should work roughly the same on Linux. See the troubleshoot section otherwise.
+I did this on Windows, I did this on Linux. See the troubleshoot section for solving problems.
 
   - Install *Sumatra* - *pip install sumatra*
   - Install *GitPython* - *pip install GitPython*  
   - Get the code for this project by using *git clone*
-  - You don't need to setup Sumatra (*smt init ...*), it's already setup on this repository
-  - Run simulations: *run params*
+  - Setup Sumatra - *smt init smt_test*
+  - Configure Sumatra - 
+    - *smt configure --executable=python*
+    - *smt configure --main=main.py*
+  - Run simulations: *smt run params*
 
 ## Experiment with it
 
