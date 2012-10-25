@@ -19,6 +19,8 @@ The simulation itself is pretty basic:
 
 n is given by a parameter called popsize and x by ticks. Both are at the params file under the *default* section.
 
+The simulation is implemented in Python 2.7 and required NumPy to be installed.
+
 ## Setup Sumatra
 
 I did this on Windows, it should work roughly the same on Linux. See the troubleshoot section otherwise.
