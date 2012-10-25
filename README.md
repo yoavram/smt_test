@@ -6,7 +6,9 @@ This is a simple Python simulation that can be used to test and experiment the [
 
 Sumatra is a tool I found out about recently (10/12) that manages your computational experiments: simulations, calculations, analysis, any program your going to be running many times to create lots of data. It keeps track of what exactly you ran, in terms of source code, parameters, environment configuration, dependencies, etc.; when you ran it; how long it took; what was the input and output results. It lets you easily repeat configurations to be run again. And it let's you browse a library of your activity via your browser.
 
-I've been looking for something like this ever since I ran my 1000th simulation on our lab's computer cluster, I was so frustrated with keeping track of what I'm running. So I decided I'd put this simple tutorial online for the sake of others, and for demoing it to colleagues.
+I've been looking for something like this ever since I ran my 1000th simulation on our lab's computer cluster, I was so frustrated with keeping track of what I'm running. So I decided I'd put this tutorial online for the sake of others, and for demoing it to colleagues. 
+
+Note that demo this will not prevent you the need from installing and setting up *Sumatra* - but it will give you a quick simulation to run with it, and I provide some troubleshooting of problems I stumbled upon.
 
 ## The Simulation
 
