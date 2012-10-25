@@ -47,7 +47,12 @@ Try different Sumatra stuff from [here](http://packages.python.org/Sumatra/comma
 
 ## Troubleshoot
 
-1. The only trouble I had was that when trying to call *smt* from the Windows command line it didn't work so I had to call *python c:\python27\scripts\smt*. I managed a workaround by working from *Git Bash* instead of *cmd*, but then found out a solution in the [Sumatra Google Group](https://groups.google.com/forum/?fromgroups=#!topic/sumatra-users/Jlo7Ixhp1dM).
+1. On Windows: when trying to call *smt* from the Windows command line it didn't work so I had to call *python c:\python27\scripts\smt*. I managed a workaround by working from *Git Bash* instead of *cmd*, but then found out a solution in the [Sumatra Google Group](https://groups.google.com/forum/?fromgroups=#!topic/sumatra-users/Jlo7Ixhp1dM).
+1. On a Linux cluster machine: I didn't have root control so installing and using *Sumatra* was a bit of tricky:
+  - First I installed [virtualenv] locally, that is: *pip install --user virtualenv*. If you are using a different python installer, check how to do it.
+  - Then I had to add the local site-packages folder to the PYHONPATH and the local bin folder to the PATH so that *virtualenv* would work. That took me some time because most tutorials assume *bash* but I'm using *csh*.
+  - Then I started an *Sumatra* virtual environment - see directions [here](http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/). You got to be on *bash* to call *bin/activate*!
+  - Then I went on, and everything worked nicely.
 
 ## License
 
