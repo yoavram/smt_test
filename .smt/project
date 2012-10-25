@@ -7,7 +7,7 @@
     "name": "Python"
   }, 
   "default_repository": {
-    "url": "d:\\workspace\\smt_test", 
+    "url": "/groups/lilach_hadany/yoavram/workspace/smt_test", 
     "type": "sumatra.versioncontrol._git.GitRepository"
   }, 
   "name": "smt_test", 
@@ -19,7 +19,7 @@
     "type": "sumatra.launch.SerialLaunchMode"
   }, 
   "record_store": {
-    "db_file": "d:\\workspace\\smt_test\\.smt\\records", 
+    "db_file": "/groups/lilach_hadany/yoavram/workspace/smt_test/.smt/records", 
     "type": "sumatra.recordstore.django_store.DjangoRecordStore"
   }, 
   "data_store": {
@@ -29,6 +29,6 @@
   "on_changed": "error", 
   "data_label": null, 
   "default_main_file": "main.py", 
-  "_most_recent": "100k", 
+  "_most_recent": null, 
   "description": ""
 }
