@@ -1,7 +1,7 @@
 {
   "default_executable": {
-    "path": "c:\\Python27\\python.exe", 
-    "version": "2.7.3", 
+    "path": "/usr/bin/python", 
+    "version": "unknown", 
     "type": "sumatra.programs.PythonExecutable", 
     "options": "", 
     "name": "Python"
