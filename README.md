@@ -41,7 +41,7 @@ Try different Sumatra stuff from [here](http://packages.python.org/Sumatra/comma
 
 ## Troubleshoot
 
-1. The only trouble I had was that when trying to call *smt* from the Windows command line it didn't work so I had to call *python c:\python27\scripts\smt*. But I did better than that - started *Git Bash* and worked from there, then *smt* just works.
+1. The only trouble I had was that when trying to call *smt* from the Windows command line it didn't work so I had to call *python c:\python27\scripts\smt*. I managed a workaround by working from *Git Bash* instead of *cmd*, but then found out a solution in the [Sumatra Google Group](https://groups.google.com/forum/?fromgroups=#!topic/sumatra-users/Jlo7Ixhp1dM).
 
 ## License
 
