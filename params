@@ -1,2 +1,3 @@
-popsize = 1000
-ticks = 100
+pop.size = 1000
+ticks = 10
+types = 3
