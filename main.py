@@ -27,11 +27,12 @@ def main(parameters):
 
 parameter_file = sys.argv[1]
 parameters = build_parameters(parameter_file)
-
+print parameters
 project = load_project()
 record = project.new_record(parameters=parameters,
                             main_file=__file__,
                             reason="reason for running this simulation")
+                            
 parameters.update({"sumatra_label": record.label})
 start_time = time.time()
 
