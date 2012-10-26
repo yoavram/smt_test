@@ -19,6 +19,7 @@ def main(parameters):
     while t < ticks:
         x[t] = multinomial(popsize, x[t-1]/fpopsize)
         t += 1
+    fout_name = "Data/smt_test_%s.csv" % parameters["sumatra_label"]
     fout = open(fout_name,"wb")
     wr = csv.writer(fout)
     wr.writerows(x)
