@@ -27,6 +27,8 @@ def main(parameters):
 
 parameter_file = sys.argv[1]
 parameters = build_parameters(parameter_file)
+parameters.update({"parameter_file":parameter_file})
+
 project = load_project()
 record = project.new_record(parameters=parameters,
                             main_file=__file__,
