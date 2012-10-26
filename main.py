@@ -20,8 +20,9 @@ record = project.new_record(parameters=parameters,
 parameters.update({"sumatra_label": record.label})
 start_time = time.time()
 
-fin = popen(r"c:\program files\R\R-2.15.0\bin\Rscript.exe main.r %s %s" %
-            (record.label, parameter_file))
+cmd = r"c:\program files\R\R-2.15.0\bin\Rscript.exe main.r %s %s" % (record.label, parameter_file)
+print "Running command", cmd
+fin = popen()
 print fin.read()
 fin.close()
 
