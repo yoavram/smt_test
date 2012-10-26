@@ -8,7 +8,7 @@ from sumatra.projects import load_project
 from sumatra.parameters import build_parameters
 
 def main(parameters):
-    popsize = parameters["popsize"]
+    popsize = parameters["pop.size"]
     fpopsize = float(popsize)
     ticks = parameters["ticks"]
 
