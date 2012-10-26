@@ -27,7 +27,6 @@ def main(parameters):
 
 parameter_file = sys.argv[1]
 parameters = build_parameters(parameter_file)
-print parameters
 project = load_project()
 record = project.new_record(parameters=parameters,
                             main_file=__file__,
@@ -43,3 +42,4 @@ record.output_data = record.datastore.find_new_data(record.timestamp)
 project.add_record(record)
 
 project.save()
+print parameters
