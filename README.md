@@ -21,7 +21,7 @@ The simulation itself is pretty basic:
 
 n is given by a parameter called popsize and x by ticks. Both are at the params file under the *default* section.
 
-The simulation is implemented in Python 2.7 and required NumPy to be installed.
+The simulation is implemented in Python 2.7 and requires NumPy to be installed.
 
 ## Setup Sumatra
 
@@ -53,12 +53,12 @@ Try different Sumatra stuff from [here](http://packages.python.org/Sumatra/comma
 1. On a Linux cluster machine: I didn't have root control so installing and using *Sumatra* was a bit of tricky:
   - First I installed [virtualenv] locally, that is: `pip install --user virtualenv`. If you are using a different python installer, check how to do it.
   - Then I had to add the local site-packages folder to the PYHONPATH and the local bin folder to the PATH so that `virtualenv` would work. That took me some time because most tutorials assume *bash* but I'm using *csh*.
-  - Then I started an *Sumatra* virtual environment - see directions [here](http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/). You got to be on *bash* to call `bin/activate`!
+  - Then I started a *Sumatra* virtual environment - see directions [here](http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/). You got to be on *bash* to call `bin/activate`!
   - Then I went on, and everything worked nicely.
 
 ## License
 
-I'm talking about the license of the code and README, for Python's and Sumatra's licese visit their website, but I think both are pretty much free.
+The license for this repository (for Python and Sumatra license visit their website, but I think both are pretty much free):
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 
