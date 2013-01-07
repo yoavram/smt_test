@@ -38,7 +38,7 @@ Both are at the params file under the `default` section.
 
 The simulation is implemented in Python 2.7 and requires NumPy to be installed.
 
-## Setup Sumatra
+## Getting started
 
 I did this on Windows, I did this on Linux. See the troubleshoot section for solving problems.
 
@@ -51,7 +51,7 @@ I did this on Windows, I did this on Linux. See the troubleshoot section for sol
     - `smt configure --main=main.py`
   - Run simulations: `smt run params`
 
-## Experiment with it
+## Experimenting
 
 Try different Sumatra stuff from [here](http://packages.python.org/Sumatra/command_reference.html), like:
 
