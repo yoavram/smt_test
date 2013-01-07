@@ -4,11 +4,25 @@
 
 This is a simple Python simulation that can be used to test and experiment the [Sumatra](http://packages.python.org/Sumatra/index.html) Simulation Management Tool.
 
-Sumatra is a tool I found out about recently (10/12) that manages your computational experiments: simulations, calculations, analysis, any program your going to be running many times to create lots of data. It keeps track of what exactly you ran, in terms of source code, parameters, environment configuration, dependencies, etc.; when you ran it; how long it took; what was the input and output results. It lets you easily repeat configurations to be run again. And it let's you browse a library of your activity via your browser.
+**Sumatra** is a tool I found out about recently (10/12) that manages your computational experiments: 
+simulations, calculations, analysis, any program your going to be running many times to create lots of data. 
+It keeps track of what exactly you ran, in terms of source code, parameters, 
+environment configuration, dependencies, etc.; when you ran it; 
+how long it took; what was the input and output results. 
+It lets you easily repeat configurations to be run again. 
+And it let's you browse a library of your activity via your browser.
 
-I've been looking for something like this ever since I ran my 1000th simulation on our lab's computer cluster, I was so frustrated with keeping track of what I'm running. So I decided I'd put this tutorial online for the sake of others, and for demoing it to colleagues. 
+I've been looking for something like this ever since I ran my 1,000th simulation on our lab's computer cluster, 
+I was so frustrated with keeping track of what I'm running. 
+So I decided I'd put this tutorial online for the sake of others, and for demoing it to colleagues. 
 
-Note that demo this will not prevent you the need from installing and setting up *Sumatra* - but it will give you a quick simulation to run with it, and I provide some troubleshooting of problems I stumbled upon.
+Note that demo this will not prevent you the need from installing and setting up *Sumatra* - 
+but it will give you a quick simulation to run with it, 
+and I provide some troubleshooting of problems I stumbled upon.
+If you find other problems and would like to add how you troubleshoot them, 
+please `fork` this repo, edit the `README.md` file, and do a `pull-request` - 
+I'd be delighted to `merge`. 
+Note that this can be easily done in your browser using GitHub's text editor.
 
 ## The Simulation
 
@@ -19,7 +33,8 @@ The simulation itself is pretty basic:
   - In every simulation step, randomly sample the next generation so that each type gives birth to invdividuals of the same type
   - Run x number of steps
 
-n is given by a parameter called popsize and x by ticks. Both are at the params file under the *default* section.
+`n` is given by a parameter called `popsize` and `x` by `ticks`. 
+Both are at the params file under the `default` section.
 
 The simulation is implemented in Python 2.7 and requires NumPy to be installed.
 
