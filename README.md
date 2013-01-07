@@ -1,6 +1,6 @@
 # Sumatra Test
 
-## What Is this?
+## Overview
 
 This is a simple Python simulation that can be used to test and experiment the [Sumatra](http://packages.python.org/Sumatra/index.html) Simulation Management Tool.
 
