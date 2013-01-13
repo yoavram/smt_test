@@ -65,12 +65,13 @@ Try different Sumatra stuff from [here](http://packages.python.org/Sumatra/comma
 ## Troubleshoot
 
 1. On Windows: when trying to call `smt` from the Windows command line it didn't work so I had to call `python c:\python27\scripts\smt`. I managed a workaround by working from *Git Bash* instead of *cmd*, but then found out a solution in the [Sumatra Google Group](https://groups.google.com/forum/?fromgroups=#!topic/sumatra-users/Jlo7Ixhp1dM).
-1. On a Linux cluster machine: I didn't have root control so installing and using *Sumatra* was a bit of tricky:
+1. On a Linux machine: I didn't have root control so installing and using *Sumatra* was a bit of tricky:
   - First I installed [virtualenv] locally, that is: `pip install --user virtualenv`. If you are using a different python installer, check how to do it.
   - Then I had to add the local site-packages folder to the PYHONPATH and the local bin folder to the PATH so that `virtualenv` would work. That took me some time because most tutorials assume *bash* but I'm using *csh*.
   - Then I started a *Sumatra* virtual environment - see directions [here](http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/). You got to be on *bash* to call `bin/activate`!
   - Then I went on, and everything worked nicely.
-1. On a Sun Grid Engine cluster, I had troubles running Sumatra because it uses *git* via *GitPython* which itself is not an implementation of *git* but a wrapper around the *git* executable (and a good wrapper it is!). So when *GitPython* uses a subprocess to call *git* I got `Permission denied` because I'm guessing *SGE* doesn't allow creating processes. Changing to an `hg` repository was the solution, because `hg` is implemented in python and therefore doesn't require the creation of a new process.
+1. On a Sun Grid Engine cluster, I had troubles running Sumatra because it uses *git* via *GitPython* which itself is not an implementation of *git* but a wrapper around the *git* executable (and a good wrapper it is!). So when *GitPython* uses a subprocess to call *git* I got `Permission denied` because I'm guessing *SGE* doesn't allow creating processes. Changing to an *hg* repository was the solution, because *hg* is implemented in python and therefore doesn't require the creation of a new process. If your remote repository must be in *git* (because, for example, you live in github), then you can still have the local repository in *hg* by using [hg-git](http://hg-git.github.com/), an *hg* extensions that allows an *hg* client to talk to a *git* server. It's very easy to use so don't be intimidated. See the `sge` branch for an example of an `.sge` file suitable for running on a cluster.
+
 ## License
 
 The license for this repository (for Python and Sumatra license visit their website, but I think both are pretty much free):
